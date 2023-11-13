@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(39, 39, 42, 0.2);
+}
+
+.text-ctn {
+    line-height: 1.5;
+    width: auto;
+}
+
+body {
+    background-image: url('https://img.freepik.com/photos-premium/molecule-structure-hexagonale-recherche-adn-abstrait-medical-fond-communication-f_230610-900.jpg?w=1060');
+    background-size: cover;
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+header {
+    padding: 10px 0;
+    background-color: #264EE4;
+}
+
+.anim-header {
+    animation: slideIn 1s ease-in-out;
+}
+
+.section-one h1 {
+    margin-left: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    margin-right: 40px;
+    padding: 0;
+}
+
+nav ul li {
+    transition: transform 0.5s ease;
+}
+
+nav ul li:hover {
+    transition: transform 0.5s ease;
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+
+}
+
+.section-html {
+    margin-left: 40px;
+    margin-top: 50px;
+    border: solid gray;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    padding: 20px;
+}
+
+.html_logo img {
+    border-radius: 10px;
+    box-shadow: 12px 12px 2px 1px rgba(39, 39, 42, 0.2);
+    margin-right: 40px;
+    width: 100px;
+    height: 100px;
+}
+
+.html img {
+    border-radius: 10px;
+    box-shadow: 12px 12px 2px 1px rgba(39, 39, 42, 0.2);
+    margin-right: 40px;
+    width: 300px;
+    height: 400px;
+}
+
+.ctn-ctn {
+    display: flex;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+.html-ctn {
+    margin-left: 60px;
+    margin-top: 40px;
+    display: flex;
+    width: 1150px;
+    border: solid gray;
+    border-radius: 10px;
+    height: 470px;
+    box-shadow: 12px 12px 2px 1px rgba(39, 39, 42, 0.2);
+}
+
+/****************font styles**********************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.section-html p {
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.section-html h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.anim-header ul li a {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/********************************Keyframes******* **************/
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+}
+
+/**************************Media Queries***********************************/
+
+@media (max-width: 768px) {
+    .section-html {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .html_logo img,
+    .html img {
+        width: 100%;
+        margin-right: 0;
+        height: auto;
+    }
+
+    .ctn-ctn {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .html-ctn {
+        margin: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+
+    .navigation li {
+        margin-bottom: 10px;
+        line-height: 1.5;/
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: center;
+    }
+
+    ul {
+        flex-direction: column;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+/*-------------------Foooter-------------------*/
+.navigation li {
+    margin-bottom: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(240, 245, 246, 0.8);
+    padding: 20px;
+    align-items: baseline;
+    margin-top: 60px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    gap: 200px;
+}
+.footer-ctn{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    
+      }
+      footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+.navigation {
+    flex-direction: column;
+}
+
+.navigation li a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.navigation li {
+    line-height: 0.01;
+}
